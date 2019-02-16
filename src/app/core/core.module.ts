@@ -10,6 +10,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavComponent } from './nav/nav.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
+
 // import { ChartistModule } from 'ng-chartist';
 
 @NgModule({
@@ -25,11 +26,12 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     NavComponent,
     DashboardComponent
 
+
   ],
   exports: [
     CoreComponent,
-    DashboardComponent,
-    NavComponent
+    NavComponent,
+    DashboardComponent
   ]
 })
 export class CoreModule { }
