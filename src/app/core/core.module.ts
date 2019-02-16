@@ -5,6 +5,11 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { CoreRoutingModule } from './core.routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+// components
+
+import { NavComponent } from './nav/nav.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+
 // import { ChartistModule } from 'ng-chartist';
 
 @NgModule({
@@ -17,10 +22,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   ],
   declarations: [
     CoreComponent,
+    NavComponent,
+    DashboardComponent
 
   ],
   exports: [
-    CoreComponent
+    CoreComponent,
+    DashboardComponent,
+    NavComponent
   ]
 })
 export class CoreModule { }
